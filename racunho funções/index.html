@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELA FUNÇÃO</title>
+    <style>
+            :root {
+            --color-white: #fff;
+            --color-dark1: #272727;
+            --color-dark2: #2d2d2d;
+            --color-dark3: #414141;
+            --color-dark4: #1c1c1c;
+            --color-dark5: #343434;
+            --color-purple: #b040ff;
+        }
+      
+            
+    .function-buttons{
+    width: 250px;
+    padding: 0.00px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-dark4); 
+    }
+    .text-functions{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center; 
+        color: #b040ff;
+    }
+    
+        
+    </style>
+</head>
+<body>
+    <section>
+    <div class="function-buttons">
+    <h1 class="text-functions">Agendamento</h1>
+    </div>
+    <div class="function-buttons">
+        <h1 class="text-functions">Comandas/Caixa</h1>
+        </div>
+        <div class="function-buttons">
+        <h1 class="text-functions">Cadastro Clientes</h1>
+        </div>
+        <div class="function-buttons">
+        <h1 class="text-functions">Controle de Estoque</h1>
+        </div>
+        <div class="function-buttons">
+        <h1 class="text-functions">Relatorio</h1>                   
+        </div>
+    </section>
+    
+</body>
+<script>
+    var header = document.getElementById('header');
+    var navigationHeader = document.getElementById('navigation_header')
+    var content = document.getElementById('content')
+    var showSidebar = false;
+    function toggleSidebar () 
+    {
+        showSidebar = !showSidebar;
+        console.log(showSidebar);
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+        }
+
+
+    }
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            toggleSidebar();
+            
+        }
+     
+    }
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar)
+        {
+        
+            toggleSidebar();
+        }
+       
+    });
+
+    
+</script>
+
+</html>

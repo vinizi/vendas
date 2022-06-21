@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>teste</title>
+    <link rel="stylesheet" href="../css/design.css" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Stoke:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header" id="header">
+      <button onclick="toggleSidebar()" class="btn_icon_header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
+      <div class="logo_header">
+        <img src="../img/CANNABYTE.png" class="img_logo_header" alt="Logo" />
+      </div>
+      <div class="navigation_header" id="navigation_header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+        <a href="../index.html" class="active" >Home</a>
+        <a href="#">Funções</a>
+        <a href="#">Planos</a>
+        <a href="#">Suporte</a>
+      </div>
+    </div>
+    <div class="pricing-plan_container">
+      <section class="pricing-plan">
+        <div class="pricing-plan_header">
+          <h1 class="pricing-plan_title">Starter Plan</h1>
+          <h2 class="pricing-plan_summary">For those getting started</h2>
+        </div>
+        <div class="pricing-plan_description">
+          <ul class="pricing-plan_list">
+            <li class="pricing-plan_feature">Feature #1</li>
+            <li class="pricing-plan_feature">Feature #2</li>
+            <li class="pricing-plan_feature">Feature #3</li>
+            <li class="pricing-plan_feature">Feature #4</li>
+          </ul>
+        </div>
+        <div class="pricing-plan_actions">
+          <p class="pricing-plan_cost">$68</p>
+          <p class="pricing-plan_text">per month</p>
+          <a href="./" class="pricing-plan_button">Purchase</a>
+          <a href="#"
+            ><p class="pricing-plan_text">
+              Minimum spend $816 over 12 months
+            </p></a
+          >
+        </div>
+      </section>
+
+      <section class="pricing-plan pricing-plan_highligted">
+        <div class="pricing-plan_special-text">Recommended</div>
+        <div class="pricing-plan_header">
+          <h1 class="pricing-plan_title">Starter Plan</h1>
+          <h2 class="pricing-plan_summary">For those getting started</h2>
+        </div>
+        <div class="pricing-plan_description">
+          <ul class="pricing-plan_list">
+            <li class="pricing-plan_feature">Feature #1</li>
+            <li class="pricing-plan_feature">Feature #2</li>
+            <li class="pricing-plan_feature">Feature #3</li>
+            <li class="pricing-plan_feature">Feature #4</li>
+          </ul>
+        </div>
+        <div class="pricing-plan_actions">
+          <p class="pricing-plan_cost">$68</p>
+          <p class="pricing-plan_text">per month</p>
+          <a href="./" class="pricing-plan_button">Purchase</a>
+          <a href="#"
+            ><p class="pricing-plan_text">
+              Minimum spend $816 over 12 months
+            </p></a
+          >
+        </div>
+      </section>
+
+      <section class="pricing-plan">
+        <div class="pricing-plan_header">
+          <h1 class="pricing-plan_title">Starter Plan</h1>
+          <h2 class="pricing-plan_summary">For those getting started</h2>
+        </div>
+        <div class="pricing-plan_description">
+          <ul class="pricing-plan_list">
+            <li class="pricing-plan_feature">Feature #1</li>
+            <li class="pricing-plan_feature">Feature #2</li>
+            <li class="pricing-plan_feature">Feature #3</li>
+            <li class="pricing-plan_feature">Feature #4</li>
+          </ul>
+        </div>
+        <div class="pricing-plan_actions">
+          <p class="pricing-plan_cost">$68</p>
+          <p class="pricing-plan_text">per month</p>
+          <a href="./" class="pricing-plan_button">Purchase</a>
+          <a href="#"
+            ><p class="pricing-plan_text">
+              Minimum spend $816 over 12 months
+            </p></a
+          >
+        </div>
+      </section>
+    </div>
+    <div
+      tabindex="0"
+      onclick="closeSidebar()"
+      class="content"
+      id="content"
+    ></div>
+  </body>
+  <script>
+    var header = document.getElementById("header");
+    var navigationHeader = document.getElementById("navigation_header");
+    var content = document.getElementById("content");
+    var showSidebar = false;
+    function toggleSidebar() {
+      showSidebar = !showSidebar;
+      console.log(showSidebar);
+      if (showSidebar) {
+        navigationHeader.style.marginLeft = "-10vw";
+        navigationHeader.style.animationName = "showSidebar";
+        content.style.filter = "blur(2px)";
+      } else {
+        navigationHeader.style.marginLeft = "-100vw";
+        navigationHeader.style.animationName = "";
+        content.style.filter = "";
+      }
+    }
+    function closeSidebar() {
+      if (showSidebar) {
+        toggleSidebar();
+      }
+    }
+    window.addEventListener("resize", function (event) {
+      if (window.innerWidth > 768 && showSidebar) {
+        toggleSidebar();
+      }
+    });
+  </script>
+</html>
