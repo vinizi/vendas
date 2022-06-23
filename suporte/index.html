@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Suporte</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/design.css"/>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        .section-suporte{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .form-suporte{
+            font-family: Arial;
+        }
+
+        form input, form textarea{
+            outline: unset;
+            padding: 20px;
+            width: 300px;
+            border: 1px solid;
+            border-radius: 20px;
+        }
+        form input:focus, form textarea:focus{
+            background-color: wheat;
+        }
+        form input[type=submit]{
+            background-color: cornflowerblue;
+            color: white;
+            cursor: pointer;
+        }
+        form label {
+            margin-left: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>Suporte</h1>
+    </header>
+    <section class="section-suporte">
+        <form class="form-suporte">
+            <div>
+                <label>Nome</label>
+                <input type="text" placeholder="Digite seu nome" name="nome" required/>
+            </div>
+            <div>
+                <label>Whatsapp ou Telegram</label>
+                <input type="text" placeholder="Digite seu número" name="telefone" required/>
+            </div>
+            <div>
+                <label>Sua mensagem</label>
+                <textarea rows="10" name="msg" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="enviar"/>
+            </div>
+        </form>
+    </section>
+  </body>
+</html>
